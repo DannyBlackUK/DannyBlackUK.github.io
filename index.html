@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title><img src="img/MARS.png" alt="">Mars</title>
 	<link rel="stylesheet" href="bundle.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -10,21 +10,13 @@
 
 </head>
 <body>	
-<script type="text/javascript" src="libs/jquery.js"></script>
+
 
 <div class="loaderArea">
    <div class="loader"></div>
 </div>
 
 
-<script>
-  $(window).on('load', function () {
-    $preloader = $('.loaderArea'),
-      $loader = $preloader.find('.loader');
-    $loader.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
-  });
-</script>
 
 
 
@@ -137,6 +129,21 @@
 
 
 </div>
+
+<script type="text/javascript" src="libs/jquery.js"></script>
+
+
+<script>
+  $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
+</script>
+
+
+
 
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="libs/wow.min.js"></script>
