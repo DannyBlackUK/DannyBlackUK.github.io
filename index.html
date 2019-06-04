@@ -2,144 +2,36 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="titleicon" href="img/circle.png">
-	<title>Mars</title>
 	<link rel="stylesheet" href="bundle.min.css">
-	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" href="libs/animate.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+	<title>Creativia</title>
 </head>
-<body>	
+<body>
 
-<div class="loaderArea">
-   <div class="loader"></div>
-</div>
-
-	<div class="wrapper">
-	<div class="first-screen">
-		<nav class="nav">
-			<div class="nav__left">
-			<a class="test"><img src="img/marslogo.png" alt="Logo" class="Logo"></a>
-			<div class="phone-number"><img src="img/phone.png" alt= "Phone">+99 000 000 00</div>
-			</div>
-	    </nav>
-	<div class="first-screen__title">
-	<h3 class="wow zoomIn">Phantom</h3>
-	<p class="wow zoomIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, saepe.</p>
-	<img src="img/dron.png" alt="dron" class="title__img wow zoomIn">
-	</div>
-	<div class="first-screen__btn">
-	<a href="#Anchor" class="wow zoomIn">Scroll down</a>
-	</div>
-	</div>
-
-
-	<div id="Anchor" class="second-screen wow fadeIn" data-wow-offset="500">
-		<section class="second-screen__tap fadeInLeft" data-wow-offset="500">
-			<img class="wow fadeInLeft" data-wow-offset="500" src="img/dron2.png" alt="Dron2">
-			<h5 class="" data-wow-offset="500">Tap to fly</h5>
-		</section>
-		<section class="second-screen__road wow fadeInRight" data-wow-offset="500">
-			<h4>Fly <span class="second-screen__redspan">higher</span> than before</h4>
-			<img src="img/dron2.png" alt="" class="movedron">
-		</section>
-	</div>
-
-
-	<div class="features wow fadeInLeft" data-wow-offset="300">
-		<h4>Features</h4>
-		<ul>
-			<li>
-				<figure>
-					<img src="img/new technology.png" alt="">
-					<figcaption>New technology</figcaption>
-				</figure>
-			</li>
-			<li>
-				<figure>
-					<img src="img/good signal.png" alt="">
-					<figcaption>Good signal</figcaption>
-				</figure>
-			</li>
-			<li>
-				<figure>
-					<img src="img/easy to use.png" alt="">
-					<figcaption>Easy to use</figcaption>
-				</figure>
-			</li>
-			<li>
-				<figure>
-					<img src="img/visibility.png" alt="">
-					<figcaption style="padding-left: 10px;">Visibility</figcaption>
-				</figure>
-			</li>
-		</ul>
-	</div>
-
-
-
-	<div class="third-screen">
-		<img class="third-screen__img wow fadeInLeft" data-wow-offset="200" src="img/photo1.png" alt="">		
-		<div class="third-screen__description wow fadeInRight" data-wow-offset="200">
-		<h2>New <span style="color: red;">generation</span> of vision <span style="color: red;";>.</span></h2>
-		<div class="third-screen__btn--viewmore">
-		<a class="test">view more</a></div>
+	<header>
+		<div class="container">
+		<div class="row">	
+		<div class="col"><img src="img/logo.png" alt="" class="logo"></div>
+		<div class="col-9">
+		<nav>
+			<ul class="nav__ul">
+				<li><a class="nav__item" href="">Home<div class="border"></div></a></li>
+				<li><a class="nav__item" href="">About us</a></li>
+				<li><a class="nav__item" href="">Portfolio</a></li>
+				<li><a class="nav__item" href="">Clients</a></li>
+				<li><a class="nav__item" href="">Team</a></li>
+				<li><a class="nav__item" href="">Services</a></li>
+				<li><a class="nav__item" href="">Blog</a></li>
+				<li><a class="nav__item" href="">Contact</a></li>
+			</ul>
+		</nav>
 		</div>
-	</div>
-
-
-	<div class="fourth-screen">
-			<div class="fourth-screen__description wow fadeInRight" data-wow-offset="300">
-			<h2>New generation of flying</h2>
-			<div class="fourth-screen__btn--products"><a class="test">Products</a></div>
-			</div>
-		<img class="wow fadeInUp" data-wow-offset="500" src="img/dron.png" alt="">
-	</div>
-	
-
-	<div class="fifth-screen wow fadeIn" data-wow-offset="200">
-		<div class="fifth-screen__content">
-		<h1 class="wow zoomIn" data-wow-offset="100">Start your journey</h1>
-		<a class="wow zoomIn test" data-wow-offset="100">view more</a>
 		</div>
-	</div>
-
-  <div class="final">
-  		<img src="img/marslogo.png" alt="Logo">
-  		<p>2016 Copyright. All rights reserved by Symu.co</p>
-  </div>
-
-	<div class="form">
-		<div class="form__description">	
-		Sorry, but it's not a real landing, it's just demonstration of my skills.
-		I think that it's button go to the official store.
-		<a class="form__close form__cross"><i class="fa fa-times form__cross"></i></a>
-
-		</div>
-		<div class="form__btn">
-		<div class="form__btn__store">If you wanna go there press here. <a href="https://www.dji.com/phantom">Go store</a></div> 
-		<div class="form__btn__stay">If you not wanna go there press here. <a class="form__close">Stay</a></div>
-		</div>
+	</header>
 	</div>
 
 
-</div>
 
-<script type="text/javascript" src="libs/jquery.js"></script>
-<script>
-  $(window).on('load', function () {
-    $preloader = $('.loaderArea'),
-      $loader = $preloader.find('.loader');
-    $loader.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
-  });
-</script>
-
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="libs/wow.min.js"></script>
-<script>
-	new WOW().init();
-</script>
 </body>
 </html>
