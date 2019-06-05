@@ -1,0 +1,168 @@
+@import "variables";
+
+header{
+	background-color: black;
+	width: 100%;
+	height: 100%; 
+}
+
+nav{
+	display:flex;
+	width:100%;
+	flex-direction:row;
+	justify-content:flex-end;
+}
+
+.logo{
+	position:fixed;
+	left:10%;
+}
+
+
+.nav__ul{
+	margin-right: 10%;
+	display: flex;
+	text-align: center;
+
+}
+
+
+.nav__item{
+	position:relative;
+	display: block;
+	color: $grey;
+	padding: 20px 15px;
+	text-transform: uppercase;
+	transition: .3s;
+	font-family: Raleway, Arial, Times New Roman;
+	font-weight: bold;
+}
+
+.nav__item:hover{
+	color:white;
+}
+
+.nav__item:active:after{
+	content: '';
+	position:absolute;
+	background-color:red;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	width: 30%;
+	height: 2px;
+}
+
+.nav__item:active:before{
+	content: '';
+	position:absolute;
+	background-color:red;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 30%;
+	height: 2px;
+}
+
+
+//burger
+.burger-icon{
+		display:none;
+		position:fixed;
+		right: 10%;
+		top:1.3%;
+}
+
+.burger-menu__wrapper{
+	display:none;
+	width:50%;
+	height: 100vh;
+	transform: translate(100%);
+	background-color:white;
+	border-left: 1px solid grey;
+	position:absolute;
+	z-index:99;
+}
+
+.burger-menu__list{
+	line-height: 3;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+.burger-menu__item{
+	display:block;
+	border-bottom:1px solid grey;
+}
+
+.burger-menu{
+	overflow: hidden;
+
+
+}
+
+
+
+//
+
+.subbg{
+	display:none;
+	width:100vw;
+	height: 100vh;
+	background-color:grey;
+	opacity: .1;
+	position:absolute;
+	z-index: 95;
+}
+
+@media only screen and (max-device-width: 500px){
+
+
+	.nav__item{
+		display:none;
+	}
+
+
+	header{
+		width:100vw;
+		height: 5vh;
+		overflow:hidden;
+	}
+
+	.logo{
+		left:0;
+	}
+
+	.burger-icon{
+		display:block;
+		margin-bottom: 0;
+	}
+
+
+}
+
+@media only screen and (min-device-width:501px) and (max-device-width: 1023px){
+		
+	.logo{
+		left:0;
+		width:20%;
+	}
+
+
+	.nav__ul{
+		margin-right:0;
+	}
+
+
+}
+
+@media only screen and (min-device-width:1023px) and (max-device-width: 1269px){
+	.nav__ul{
+		margin-right: 0;
+	}
+
+	.logo{
+		left:0;
+	}
+
+}
