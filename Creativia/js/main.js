@@ -1,16 +1,15 @@
 jQuery(document).ready(function($) {
 	
 	$('.burger-icon').click(function() {
-		$('.burger-menu__wrapper').slideDown();
-		$(this).css('display', 'none');
-		$('.subbg').css('display', 'block');
+		$('.burger-menu__wrapper').slideToggle();
+		$(this).toggleClass('active-burger-menu');
+		$('.subbg').slideToggle();
 	});
-
 
 	$('.subbg').click(function(event) {
 		$('.burger-menu__wrapper').slideUp();
 		$(this).css('display', 'none');
-		$('.burger-icon').css('display', 'block');
+		$('.burger-icon').toggleClass('active-burger-menu');
 	});
 
 
