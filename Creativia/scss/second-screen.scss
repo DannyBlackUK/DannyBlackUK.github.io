@@ -1,0 +1,121 @@
+
+.second-screen{
+	height: 100%;
+	width: 100%;
+}
+
+.second-screen p{
+	font-family: Lato, Arial, Times New Roman;
+}
+
+.second-screen__head{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.second-screen__head p{
+	font-weight: bold;
+	text-align: center;
+}
+
+.second-screen__head h4{
+	margin-bottom: 20px;
+	font-weight:bold;
+}
+
+.second-screen__content{
+	display:flex;
+}
+
+.second-screen__content__text{
+	display:flex;
+	flex-direction: column;
+	height: 100%;
+	width:50%;
+}
+
+.second-screen__content__text p{
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+.tabs{
+	height: 200px;
+	margin-bottom: 100px;
+	width:100%;
+}
+
+.tab-menu a{
+	font-size: 20px;
+	background-color: #f7f7f7;
+	display:block;
+	line-height: 2;
+	font-family: Raleway, Arial, Times New Roman;
+	cursor: pointer;
+	border:1px solid rgba(0,0,0,0.1);
+	padding-left: 15px;
+	padding-right: 50px;
+	transition: .2s;
+	margin-bottom: 5px;
+}
+
+.tab-content{
+	font-family: Lato, Arial, Times New Roman;
+	font-style: italic;
+	color:grey;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(0,0,0,0.1);
+	padding-left:15px;
+	padding-bottom:15px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+
+}
+
+.tab-menu a:hover{
+	font-weight:bold;
+}
+
+.tab-button__active{
+	font-weight: bold;
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.second-screen__content__slider{
+		display:none;
+		width:50%;
+		height:100%;
+		margin-left: 100px;
+}
+
+.second-screen__slide-active{
+
+	
+
+}
+
+
