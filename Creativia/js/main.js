@@ -24,19 +24,18 @@ jQuery(document).ready(function($) {
   	
 
     var findArticle = $(this).next();
-    var findWrapper = $(this).closest('.tab-menu');
-      
-	// $('.tab-menu > a').animate({color: "red"}, 1000);
-	$(this).addClass('tab-button__active').removeClass('tab-button__active', 2000)
+    var findWrapper = $(this).closest('.tab-menu');  
+		$(this).css('color', 'red').css('font-weight', 'bold');
+		$('.tab-menu a').not(this).css('color', 'black').css('font-weight', 'normal');
 
     if (findArticle.is(':visible')) {
-      findArticle.slideUp('fast');
-
+      findArticle.slideUp('fast')
     }
     else {
       findWrapper.find('>article').slideUp('fast');
       findArticle.slideDown('fast');
     }
+
   });
 
 });
